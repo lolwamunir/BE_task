@@ -1,0 +1,5 @@
+SELECT week1.id  
+FROM Weather week1  
+JOIN Weather week2  
+ON DATEDIFF(week1.recordDate, week2.recordDate) = 1  
+WHERE week1.temperature > week2.temperature;
